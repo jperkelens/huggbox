@@ -1,4 +1,4 @@
-package Plugins::HelloWorld::Settings;
+package Plugins::Huggbox::Settings;
 
 
 # SqueezeCenter Copyright 2001-2007 Logitech.

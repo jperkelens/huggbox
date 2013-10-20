@@ -5,11 +5,11 @@
 
 
 PLUGIN_HUGGBOX
-	EN	Hello World
+	EN	Huggbox
 	FR	Bonjour Tout le Monde
 
 PLUGIN_HUGGBOX_DESC
-	EN	Hello World Tutorial Plugin
+	EN	Huggbox
 
 PLUGIN_HUGGBOX_SEE_MESSAGE
 	EN	Press RIGHT to see message

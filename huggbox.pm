@@ -4,6 +4,9 @@ package Plugins::huggbox;
 
 our %functions = ();
 sub initPlugin {
+    my $class = shift;
+    $class->SUPER::initPlugin();
+
     %functions = (
         'up' => sub {
             my $client = shift;
@@ -32,9 +35,12 @@ sub initPlugin {
 }
 
 sub webPages {
-    Slim::Web::HTTP::addPageFunction("plugins/huggbox/enable.html",  \&handleEnable);
-    Slim::Web::Pages->addPageLinks('plugins', {"plugins/huggbox/index.htm", \&handleIndex} );
+  my $class = shift;
+  my $title = $class->getDisplayName();
+  Slim::Web::Pages->addPageLinks('plugins', { $title => "plugins/huggbox/" } );
 }
+
+
 
 sub lines {
     my $client = shift;
@@ -45,7 +51,6 @@ sub lines {
 
 sub setMode { my $client = shift; $client->lines(\&lines); }
 sub getFunctions { return \%functions; }
-sub getDisplayName { return "Huggbox"; }
+sub getDisplayName { return "HUGGGOX"; }
 
-initPlugin();
 1;

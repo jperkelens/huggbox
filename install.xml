@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 
 <extension>
-	<id>665291B7-02A3-4623-9152-FD30B6217C8B</id>
+	<id>CA281351-434F-41F4-9A93-4E937F1AF1F1</id>
         <name>PLUGIN_HUGGBOX</name>
         <module>Plugins::Huggbox::Plugin</module>
         <version>1.0</version>
         <description>PLUGIN_HUGGBOX_DESC</description>
-        <creator>Mitch Gerdisch</creator>
-        <email>squeezebox@jesslex.com</email>
+        <creator>JP Erkelens</creator>
+        <email>jperkelens@gmail.com</email>
 
 	<defaultState>enabled</defaultState>
 
-        <homepageURL>http://www.jesslex.com/slim.html</homepageURL>
 	<optionsURL>plugins/Huggbox/settings/basic.html</optionsURL>
 	<type>2</type><!-- type=extension -->
 
